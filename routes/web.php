@@ -14,14 +14,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 #membuat route untuk admin
-// Route::get('admin', function() {
-//     return 'Hi Admin';
-// })->middleware('role:admin');
+Route::get('admin', function() {
+    return 'Hi Admin';
+})->middleware('role:admin');
 
-// #membuat route untuk user
-// Route::get('user', function() {
-//     return 'Hi User';
-// })->middleware('role:user');
+#membuat route untuk user
+Route::get('user', function() {
+    return 'Hi User';
+})->middleware('role:user');
 
 Route::get('/', function () {
     return view('welcome');
